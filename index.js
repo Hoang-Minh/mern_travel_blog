@@ -5,7 +5,6 @@ const helmet = require("helmet");
 const mongoose = require("mongoose");
 const keys = require("./config/keys");
 const middlewares = require("./middlewares/error");
-const indexRoutes = require("./routes/index");
 const logs = require("./api/logs");
 const PORT = process.env.PORT || 5000;
 
@@ -23,7 +22,6 @@ app.use(helmet());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use("/api/logs", logs);
-app.use(indexRoutes);
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));

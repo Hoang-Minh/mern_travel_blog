@@ -1,0 +1,38 @@
+.marker {
+  transform: translate(-50%, -100%);
+}
+
+.error {
+  color: red;
+}
+.marker.yellow path {
+  fill: #f8c102;
+}
+
+.marker.red path {
+  fill: red;
+}
+
+.popup {
+  position: relative;
+  width: 40vw;
+  padding: 1rem;
+  text-align: center;
+}
+
+.popup img {
+  height: 200px;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.entry-form label,
+.entry-form input,
+.entry-form textarea,
+.entry-form button {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  display: block;
+  width: 100%;
+}

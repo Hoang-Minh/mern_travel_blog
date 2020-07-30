@@ -1,2 +1,4 @@
 node_modules
 *.rest
+client/.env.production
+client/.env.development
